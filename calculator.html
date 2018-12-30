@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Calculate </title>
+<link rel = "stylesheet" type ="text/css" href ="calculator.css" media="screen">
+</head>
+
+
+<body>
+<div class="formstyle">
+
+	<form name="calculater">
+	
+	
+	<input type="text" name="answer" class="answer">
+	<br>
+	
+	<br>
+	
+	
+	<input class= "button" type ="button" value="1" onclick="calculater.answer.value+=`1`">
+	<input class= "button" type ="button" value="2" onclick="form.answer.value+=`2`">
+	<input class= "button" type ="button" value="3" onclick="form.answer.value+=`3`">
+	<input class= "button"type ="button" value="+" onclick="form.answer.value+=`+`">
+	<br>
+
+	
+	<input class= "button" type ="button" value="4" onclick="form.answer.value+=`4`">
+	<input class= "button" type ="button" value="5" onclick="form.answer.value+=`5`">
+	<input class= "button" type ="button" value="6" onclick="form.answer.value+=`6`">
+	<input class= "button" type ="button" value="-" onclick="form.answer.value+=`-`">
+	<br>
+	
+
+	<input class= "button" type ="button" value="7" onclick="form.answer.value+=`7`">
+	<input class= "button" type ="button" value="8" onclick="form.answer.value+=`8`">
+	<input class= "button"type ="button" value="9" onclick="form.answer.value+=`9`">
+	<input class= "button"type ="button" value="*" onclick="form.answer.value+=`*`">
+	<br>
+
+	<input class= "button" type ="button" value="=" onclick="e()">
+	<input class= "button" type ="button" value="0" onclick="form.answer.value+=`0`">
+	<input class= "button" type ="button" value="." onclick="form.answer.value+=`.`">
+	<input class= "button" type ="button" value="/" onclick="form.answer.value+=`/`">
+	<br>
+	
+	
+	<input class= "button" type ="button" value="CA" onclick="form.answer.value+=``">
+	
+	
+
+
+
+
+	</form>
+	</div>
+	<script type ="text/javascript">
+	
+	
+	function e(){
+	
+	let num=eval(document.calculater.answer.value);
+	
+
+
+	document.calculater.answer.value=num;
+	}
+	
+	</script>
+
+
+</body>
+
+</html>
